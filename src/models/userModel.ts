@@ -1,14 +1,13 @@
-import mongoose, { Model } from "mongoose";
+import mongoose, { Document, Model } from "mongoose";
 
 export interface IUser {
-  _id: mongoose.Schema.Types.ObjectId;
   username: string;
   fullName: string;
   email: string;
   avatar?: string;
 }
 
-export interface IUserDocument extends IUser {
+export interface IUserDocument extends IUser, Document {
   createdAt: Date;
   updatedAt: Date;
 }
