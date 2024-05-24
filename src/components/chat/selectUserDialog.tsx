@@ -15,7 +15,7 @@ import { sendMessageAction } from "@/lib/actions";
 import { useRouter } from "next/navigation";
 
 type SelectUserDialogProps = {
-  selectedFile: string | undefined;
+  selectedFile: string;
   onClose: () => void;
   onPrev: () => void;
 };
