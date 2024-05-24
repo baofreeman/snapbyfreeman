@@ -7,6 +7,7 @@ export interface IChat {
 export interface IChatDocument extends IChat {
   created: Date;
   updated: Date;
+  save(): void;
 }
 
 const chatSchema = new mongoose.Schema<IChatDocument>(
