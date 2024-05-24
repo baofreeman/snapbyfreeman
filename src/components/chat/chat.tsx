@@ -7,6 +7,8 @@ import {
   TextMessageSent,
   TextMessageSvgReceived,
 } from "../svgs/chatSvgs";
+import { Key } from "react";
+import { Schema } from "mongoose";
 
 type ChatProps = {
   chat: any;
@@ -14,7 +16,6 @@ type ChatProps = {
 
 const Chat = ({ chat }: ChatProps) => {
   const userToChat = chat.participants[0];
-  console.log(chat);
   const lastMessage = chat.lasMessage;
   const lastMessageType = lastMessage?.messageType;
   const formattedDate = lastMessage
