@@ -7,7 +7,7 @@ export interface IUser {
   avatar?: string;
 }
 
-export interface IUserDocument extends IUser, Document {
+export interface IUserDocument extends IUser, Document<any> {
   createdAt: Date;
   updatedAt: Date;
 }

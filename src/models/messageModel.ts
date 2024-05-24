@@ -15,7 +15,7 @@ export interface IMessage {
   opened: boolean;
 }
 
-export interface IMessageDocument extends IMessage, Document {
+export interface IMessageDocument extends IMessage, Document<any> {
   createdAt: Date;
   updatedAt: Date;
 }
